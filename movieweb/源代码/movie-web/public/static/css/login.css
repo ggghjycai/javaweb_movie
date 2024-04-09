@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.loading{
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	width: 500px;
+	height: 320px;
+	box-shadow: 2px 2px 5px 0 #BDBCBC;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+}
+
+.nav{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 1px solid gray;
+	background-color: whitesmoke;
+	width: 500px;
+	height: 70px;
+	box-shadow: 0px 0px 1px 2px #B7B7B7;
+}
+
+/*.logo{*/
+/*	display: inline-block;*/
+/*	vertical-align: bottom;*/
+/*	width: 50px;*/
+/*	height: 60px;*/
+/*}*/
+/*.logo>img{*/
+/*	margin-top: 10px;*/
+/*}*/
+
+.logoName{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 130px;
+	height: 50px;
+	font-family: "楷体";
+	font-size: 200%;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+.ckl{
+	align-items: center;
+}
+.signInTalbe{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 300px;
+	height: 100px;
+}
+
+.td1{
+	width: 95px;
+	text-align: right;
+}
+
+.td2{
+	width: 205px;
+	text-align: left;
+}
+
+.button{
+	width: 500px;
+	height: 30px;
+	margin-top: 10px;
+	
+}
+
+#login{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px 1px #232;
+	cursor: pointer;
+}
+
+.botton{
+	width: 500px;
+	height: 44px;
+}
+
+.b_right{
+	width: 250px;
+	height: 44px;
+	display: inline-block;
+	/*display: flex;*/
+	/*float: right;*/
+}
+
+.b_right>a{
+	height: 44px;
+	display: inline-block;
+	font-size: 20%;
+	color: gray;
+}
+
+#email{
+	/*background-image: url(img/user.JPG);*/
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: 5px;
+	height: 35px;
+	padding-left: 35px;
+	border: 1px solid #CCC;
+	outline: none;
+}
+
+#email:hover{
+	border: 1px solid blue;
+}
+
+#password{
+	/*background-image: url(img/password.JPG);*/
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: 5px;
+	height: 35px;
+	padding-left: 35px;
+	border: 1px solid #CCC;
+	outline: none;
+	
+}
+
+#password:hover{
+	border: 1px solid blue;
+}
+.responsive-container{
+	max-width: 80%; /* 设置最大宽度为 80% */
+	margin: 0 auto; /* 居中显示 */
+}
+
+@media (max-width: 150px) {
+	.title {
+		display: none; /* 隐藏囧囧电影标题 */
+	}
+}
+@media (max-width: 500px) {
+	.loading .row {
+		display: none;
+	}
+
+	.loading .row:nth-child(2),
+	.loading .row:nth-child(3),
+	.loading .row:nth-child(4),
+	.loading .row:nth-child(5),
+	.loading .row:nth-child(6) {
+		display: flex;
+		justify-content: center;
+	}
+
+	.loading .row:nth-child(2) input,
+	.loading .row:nth-child(3) input,
+	.loading .row:nth-child(4) input,
+	.loading .row:nth-child(5) select,
+	.loading .row:nth-child(6) input {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.loading .row:last-child {
+		margin-top: 10px;
+	}
+}
+
+

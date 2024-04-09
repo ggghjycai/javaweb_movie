@@ -1,0 +1,215 @@
+
+/* Styles for screens smaller than 576px */
+@media (max-width: 400px) {
+    .llqtop,
+    .llq01,
+    .llq02,
+    .llq03,
+    .signInTalbe,
+    #membershipStatus {
+        width: 100%; /* Make these elements take full width */
+        padding: 10px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .llq02 img {
+        max-width: 100%; /* Make sure the image is responsive */
+        height: auto;
+    }
+}
+@media (max-width: 776px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_nav,
+    .main {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .left_nav{
+        height: 100px;
+    }
+}
+
+html,body{
+    height:100%;
+}
+.center{
+    display: flex;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    /*background: -webkit-linear-gradient(bottom, #8e9eab, #eef2f3);*/
+}
+.center:after{content:".";clear:both;display:block;height:0;visibility:hidden; }
+
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*}*/
+
+.left_nav {
+    /*flex: 1;*/
+    background-color: #333;
+    color: #fff;
+    /*height: 400px;*/
+    /*width: 20%;*/
+    /*height: 100vh;*/
+    /*min-width: 200px;*/
+    text-align: center;
+}
+
+.left_nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.left_nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    line-height: 1; /* 设置行高为1，确保文字垂直居中对齐 */
+}
+
+.left_nav a:hover {
+    background-color: #555;
+}
+
+.left_nav ul ul {
+    background-color: #555;
+    display: none;
+}
+
+.left_nav ul ul a {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+    line-height: 1; /* 设置行高为1，确保文字垂直居中对齐 */
+}
+
+.left_nav ul ul a:hover {
+    background-color: #777;
+}
+
+.left_nav .ul-li.active ul {
+    display: block;
+}
+
+.main {
+    flex: 2;
+    padding: 20px;
+}
+
+.content {
+    color: #666;
+}
+
+.llqtop{
+    width: 770px;
+    display: inline-block;
+}
+
+.lll{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.llq01{
+    /*display: flex;*/
+    width: 700px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.llq02{
+    width: 225px;
+    margin-right: 10px;
+}
+
+.signInTalbe{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+.td1{
+
+    width: 110px;
+    text-align: left;
+}
+
+.td2{
+    width: 205px;
+    text-align: left;
+}
+.vip-icon{
+    float: left;
+    margin-left: 10px; /* Add some margin between the text and the image */
+    width: 50px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.lll05{
+    width: 100%;
+    height: 50px;
+    flex-grow: 1;
+    text-align: center;
+}
+.lll06{
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+

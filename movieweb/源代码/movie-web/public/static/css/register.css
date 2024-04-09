@@ -1,0 +1,157 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(img/loginbg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.9;
+}
+
+.reg{
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	width: 500px;
+	height: 350px;
+	box-shadow: 2px 2px 5px 0 #BDBCBC;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+}
+
+.nav{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 1px solid gray;
+	background-color: whitesmoke;
+	width: 500px;
+	height: 70px;
+	box-shadow: 0px 0px 1px 2px #B7B7B7;
+}
+
+.logo{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 50px;
+	height: 60px;
+}
+.logo>img{
+	margin-top: 10px;
+}
+
+.logoname{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 130px;
+	height: 50px;
+	font-family: "楷体";
+	font-size: 200%;
+	line-height: 50px;
+	text-align: center;
+}
+
+.regTalbe{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 400px;
+	height: 150px;
+}
+
+.td1{
+	width: 95px;
+	text-align: right;
+}
+
+.td2{
+	width: 185px;
+	text-align: left;
+}
+
+.td3{
+	width:80px;
+}
+
+.td3 > span{
+	width:80px;
+	font-size:12px;
+}
+
+
+.button{
+	width: 500px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+#reg{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px 1px #232;
+	cursor: pointer;
+}
+
+.bottom{
+	margin-top: 10px;
+	width: 500px;
+	height: 44px;
+}
+
+.bottom>a{
+	height: 44px;
+	display: inline-block;
+	font-size: 20%;
+	color: gray;
+}
+
+#email{
+	background-image: url(img/user.JPG);
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: 5px;
+	height: 35px;
+	padding-left: 35px;
+	border: 1px solid #CCC;
+	outline: none;
+}
+
+#email:hover{
+	border: 1px solid blue;
+}
+
+#password{
+	background-image: url(img/password.JPG);
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: 5px;
+	height: 35px;
+	padding-left: 35px;
+	border: 1px solid #CCC;
+	outline: none;
+	
+}
+
+#password:hover{
+	border: 1px solid blue;
+}
+
+#repassword{
+	background-image: url(img/password.JPG);
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: 5px;
+	height: 35px;
+	padding-left: 35px;
+	border: 1px solid #CCC;
+	outline: none;
+	
+}
+
+#repassword:hover{
+	border: 1px solid blue;
+}

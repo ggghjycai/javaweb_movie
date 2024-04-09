@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>首页</title>
+    <link type = "text/css" rel = "stylesheet" href = "/css/user.css" >
+    <script src = "/js/jquery-1.4.2.js" defer="true"></script>
+    <script src = "/js/user.js" defer="true"></script>
+</head>
+
+<body>
+<div class = "box">
+    <div id="top" th:insert="top.html" ></div>
+    <!--正文-->
+    <div class = "center" >
+        <nav class="left_nav">
+            <ul>
+                <li class="ul-li" id="hot-rankings">
+                    <a href="/user/information" class="nav-link">个人中心</a>
+                </li>
+                <li class="ul-li" >
+                    <a class="nav-linkl" href="/user/delete">退出登录</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <div class="llqtop">
+                <div class="lll">用户中心</div>
+            </div>
+            <!-- 主要内容区域 -->
+            <div class="llq01">
+                <div class="llq02">
+                    <a><img src="/img/icon/member.png"></a>
+                </div>
+                <div class="llq03">
+<!--                    <tr class="llq0301">-->
+<!--                        <div class="lll04">Email:</div>-->
+<!--                        <div class="lll00"><span th:text="${userEmail}" class="lll0401"></span></div>-->
+<!--                    </tr>-->
+<!--                    <tr class="lllte">-->
+<!--                        <div th:if="${pm == 1}" class="membership-info">-->
+<!--                            <p>已成为会员！</p>-->
+<!--                        </div>-->
+<!--                            <img src="/img/icon/vip.png" class="vip-icon">-->
+<!--                    </tr>-->
+
+                    <table class = "signInTalbe">
+                        <tr>
+                            <td class = "td1" id = "what">E-mail：</td>
+                            <td class = "td2">
+                                <span th:text="${userEmail}"></span>
+                            </td>
+                        </tr>
+                        <tr th:if="${pm == 1}">
+                            <td class = "td1">已成为会员：</td>
+                            <td class = "td2">
+                                <img src="/img/icon/VIP.png" class="vip-icon">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div id="membershipStatus" class="lll05" th:if="${pm == 0}">
+                        <button id="becomeMemberBtn" class="lll06" onclick="becomeMember()">成为会员</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="membershipModal" class="modal" style="z-index:9999">
+                <div class="modal-content">
+                    <span class="close" onclick="closeMembershipPopup()">&times;</span>
+                    <p>已成为会员！</p>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+</div>
+<!--正文结束-->
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,165 @@
+/*标题+年份+评分*/
+.playerBox-info {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 19px;
+    background-color: #222222;
+    overflow: hidden;
+}
+
+
+
+.playerBox-info .playerBox-info-content {
+    /*float: left;*/
+    width: 980px;
+    padding-left: 20px;
+}
+
+.playerBox-info .playerBox-info-title {
+    /*padding-left: 10px;*/
+    cursor: default;
+}
+
+.playerBox-info .playerBox-info-name {
+    font-size: 25px;
+    line-height: 25px;
+    color: #DDDDDD;
+    font-weight: normal;
+    display: inline;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.playerBox-info .playerBox-info-enName, .playerBox-info .playerBox-info-year, .playerBox-info .playerBox-info-grade {
+    font-family: Verdana, serif;
+}
+
+.playerBox-info .playerBox-info-year {
+    font-size: 25px;
+    line-height: 25px;
+    color: #8d8d8d;
+    padding-left: 15px;
+    padding-right: 13px;
+    position: relative;
+}
+
+.playerBox-info .playerBox-info-grade {
+    font-size: 25px;
+    line-height: 25px;
+    color: #C6A721;
+    position: relative;
+}
+
+/*介绍*/
+.playerBox-info .playerBox-info-intro {
+    margin-top: 9px;
+    margin-bottom: 18px;
+    *margin-bottom: 22px;
+    font-size: 14px;
+    color: #848484;
+    line-height: 24px;
+    position: relative;
+    _background-color: #2c2c2d;
+    overflow: hidden;
+}
+
+.playerBox-info .playerBox-intro-con {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-indent: 2em;
+}
+
+.playerBox-info-intro a {
+    color: #848484;
+    text-decoration: none;
+}
+
+.playerBox-intro-ctx {
+    height: 115px;
+    opacity: 1;
+    margin-top: 30px;
+    transition: 0.5s ease;
+    float: left;
+}
+
+.playerBox-info .playerBox-info-vodAvatar {
+    float: left;
+}
+
+.playerBox-info .playerBox-info-vodAvatar img {
+    width: 75px;
+    height: 104px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+
+.playerBox-info .playerBox-info-vodDetails {
+    float: left;
+    width: 600px;
+}
+
+.playerBox-info .playerBox-info-vodInfoList {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.playerBox-info-vodDetails .playerBox-info-vodInfoItem {
+    margin-bottom: 15px;
+    height: 14px;
+    *height: 16px;
+    line-height: 14px;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+}
+
+.playerBox-info-vodDirector {
+    margin-right: 42px;
+}
+
+.playerBox-info-vodInfoItem b{
+    text-decoration: none;
+    color: #848484;
+}
+
+.playerBox-info-vodDetails .playerBox-info-vodInfoItem a {
+    text-decoration: none;
+    color: #848484;
+    margin-right: 10px;
+}
+
+.playerBox-info-vodDetails .playerBox-info-vodInfoItem a:hover{
+    color: #33a1ff;
+}
+
+@media screen and (min-width: 768px){
+    .playerBox-info {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .playerBox-info {
+        width: 960px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .playerBox-info {
+        width: 1000px;
+    }
+}

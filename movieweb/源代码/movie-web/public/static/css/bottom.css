@@ -1,0 +1,51 @@
+.bottom{
+	margin: 0 auto;
+	width: 1200px;
+	height: 100%;
+	background-color: whitesmoke;
+	
+}
+
+.bottom_{
+	width: 500px;
+	height: 150px;
+	margin-left: 350px;
+	background-color: whitesmoke;
+}
+.b_ul{
+	margin-top: 20px;
+	float: left;
+	margin-left: 25px;
+	margin-right: 25px;
+	background-color: whitesmoke;
+}
+
+.b_ul>li{
+	font-size: 80%;
+	font-weight: 600;
+	text-aling:center;
+	list-style-type: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.b_ul>li>ul{
+}
+
+.b_ul>li>ul>li{
+	font-weight: 400;
+	text-aling:center;
+	list-style-type: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 40%;
+}
+
+.b_phone{
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+	width: 150px;
+	margin-left: 500px;
+	font-size: 30%;
+	
+}
