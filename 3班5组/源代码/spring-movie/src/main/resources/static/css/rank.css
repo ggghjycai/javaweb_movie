@@ -1,0 +1,323 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.box-10px {
+    height: 10px;
+    clear: both;
+    display: block;
+    font-size: 0;
+}
+
+.rank-box {
+    width: 980px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "宋体", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4d4d4d;
+}
+
+.rank-left-box {
+    background: #666666;
+    width: 162px;
+    float: left;
+    height: 100%;
+    display: inline;
+    padding-top: 10px;
+    position: relative; /* 设置相对定位，以便后面设置绝对定位的伪元素 */
+}
+
+.rank-left-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* 设置底部阴影的高度 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); /* 设置渐变的底部阴影 */
+}
+
+.rank-left-box .boxbg {
+    overflow: hidden;
+    padding: 0px 20px;
+    width: 120px;
+    border: 1px solid #e9e9e9;
+    background-color: #f1f1f1;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.rank-left-box .boxbg li {
+    height: 100%;
+    float: left;
+    line-height: 26px;
+    display: block;
+    font-family: "微软雅黑", serif;
+    width: 100%;
+    padding-right: 0;
+}
+
+.rank-left-box .boxbg li.line_bott {
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 14px;
+}
+
+.rank-h3{
+    font-weight: normal;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.rank-left-box .boxbg li a{
+    padding: 0 7px;
+    display: inline-block;
+    color: #4d4d4d;
+    font-weight: normal;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+    border-bottom: 0;
+    font-family: "宋体", serif;
+    font-size: 12px;
+    margin-right: 10px;
+
+}
+
+.rank-left-box .boxbg li a.nowBA {
+    background: #1a8bd1;
+    border-radius: 5px;
+    border: 1px solid #1a8bd1;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0 7px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "宋体", serif;
+    margin-right: 10px;
+}
+
+.rank-left-box .boxbg li.line_top {
+    border-top: 1px solid #ffffff;
+    padding-top: 14px;
+}
+
+.rank-left-box.bottom_pic {
+    height: 10px;
+}
+
+.rank-right-box {
+    background: linear-gradient(to bottom, #f8f8f8, #fff); /* 微弱灰色渐变背景 */
+    border: 1px solid #ccc; /* 边框颜色 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 立体感阴影效果 */
+    width: 808px;
+    float: right;
+
+}
+.rank-right-content {
+    margin: auto; /* 设置左右外边距为 auto，实现水平居中 */
+}
+
+
+.right-box-content h2 {
+    padding: 15px 13px;
+    height: 26px;
+}
+
+.duFONT-nav {
+    padding-left: 6px;
+}
+
+.duFONT div.duFONT-nav a {
+    font-family: "微软雅黑", serif;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    display: inline-block;
+    color: #4d4d4d;
+    font-weight: normal;
+}
+
+.duFONT div.duFONT-nav a.nowBA {
+    background: #1a8bd1;
+    border: 1px solid #1a8bd1;
+    border-radius: 10px;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "微软雅黑", serif;
+}
+
+.tableRANK {
+    margin-left: 20px;
+    width: 765px;
+    border: 1px solid #e8e8e8;
+    border-right: 0;
+    border-bottom: 0;
+    height: 100%;
+    float: left;
+    display: inline;
+}
+
+.tableRANK dl.title dt {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    display: inline-block;
+    color: #8e8e8e;
+}
+
+.tableRANK dl dt {
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    height: 35px;
+    line-height: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    color: #8e8e8e;
+}
+
+.tableRANK dl dt.li01 {
+    width: 64px;
+}
+
+.tableRANK dl dt.li02 {
+    width: 266px;
+}
+
+.tableRANK dl dt.li03 {
+    width: 286px;
+}
+
+.tableRANK dl dt.li04 {
+    width: 144px;
+}
+
+.cl {
+    clear: both;
+    overflow: auto;
+}
+
+.ta_c {
+    text-align: center;
+}
+
+.tableRANK dl.now {
+    background-color: #f3f8fb;
+    width: 100%;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ptnob {
+    font-family: Arial, Verdana, serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #4d4d4d;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.oh span {
+    text-align: center;
+}
+
+.oh a:hover {
+    color: blue;
+}
+
+.oh span a:hover {
+    color: blue;
+}
+
+.li02 a {
+    color: #373737;
+    text-decoration: none;
+    outline: none;
+
+}
+
+.tableRANK dl dt.li03 span {
+    padding-left: 35px;
+}
+
+.tableRANK dl dt.li04 span a {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #373737;
+    text-decoration: none;
+    outline: none;
+}
+
+.rank-page {
+    clear: both;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 26px;
+    font-size: 14px;
+}
+
+/*分页*/
+.vod-page {
+    clear: both;
+    /*display: block;*/
+    /*height: 28px;*/
+    line-height: 28px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    /*margin-top: 24px;*/
+    /*margin-bottom: 26px;*/
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 4px 8px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #2980b9;
+}

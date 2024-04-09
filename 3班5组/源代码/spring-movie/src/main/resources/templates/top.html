@@ -1,0 +1,52 @@
+<link type = "text/css" rel = "stylesheet" href = "/css/top.css" >
+<script src = "/js/top.js" defer="defer"></script>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+			<!--导航 -->
+			<div class = "nav_div">
+				<div class = "nav_img">
+					<span>囧囧电影</span>
+				</div>
+				<div class = "nav_list">
+					<ul class = "nav_ul">
+						<li><a href = "/index">首页</a></li>
+						<li><a href = "/index/rank">排行榜</a></li>
+					</ul>
+				</div>
+				<div>
+					<!--search-->
+					<ul class="search-box">
+						<li class="search-select">
+							<div class="search-select-text-box"><span class = "search-select-text">电影</span></div>
+							<div style="display: inline-block"><div class="search-tri"></div></div>
+							<div class="search-select-bottom">
+								<p class="option">电影</p>
+								<p class="option">主演</p>
+							</div>
+						</li>
+						<li class="search-bar">
+							<div class="search">
+								<input type="text" class="search-input" id = "search" placeholder="搜索" autocomplete="off">
+								<button class="search-button" type="button">
+									<img src="/img/icon/search.png">
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--search结束-->
+				<div class="nav-right user-icon" id="userIcon">
+					<a href="javascript:void(0);" id = "toLogin">
+						<img src="/img/icon/member.png">
+					</a>
+					<div class="user-options" id="userOptions" >
+						<p class="user-center" id = "userCenter" >用户中心</p>
+						<p class="logOut" id = "logOut" >退出</p>
+					</div>
+				</div>
+<!--				<div class = "nav_right">-->
+<!--					<div class = "nav_loading" id = "log">-->
+<!--&lt;!&ndash;						<a href = "{:url('login/login')}" id = "login">您好，请登录</a>&ndash;&gt;-->
+<!--					</div>-->
+<!--				</div>-->
+			</div>
+			<!--导航结束-->
